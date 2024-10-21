@@ -39,6 +39,7 @@ body {
     font-weight: 500;
     color: #252b42;
     font-family: Montserrat, sans-serif;
+    background-color: #fafafa;
 }
 
 /* -------------------------------- */
@@ -160,6 +161,41 @@ body {
     margin-top: -111px;
 }
 
+.page__advantages {}
+
+/* ---HEADER-BLOCK-------------------------- */
+
+.header-block {
+    text-align: center;
+    letter-spacing: .2px;
+}
+
+.header-block__title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: calc(57 / 40 * 100%);
+}
+
+.header-block__title:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.header-block__sub-title {
+    line-height: calc(57 / 40 * 100%);
+    color: #737373;
+}
+
+@media (max-width: 992px) {
+    .header-block__title {
+        font-size: 35px;
+    }
+}
+@media (max-width: 767px) {
+    .header-block__title {
+        font-size: 30px;
+    }
+}
+
 /* ---ПОДВАЛ-------------------------- */
 .footer {}
 
@@ -182,6 +218,12 @@ body {
 @media (max-width: 992px) {
     .main-block__body {
         padding: 120px 0 191px 0;
+    }
+}
+
+@media (max-width: 479px) {
+    .main-block__body {
+        padding: 115px 0 160px 0;
     }
 }
 
@@ -356,4 +398,89 @@ body {
 .item-service__text {
     color: #737373;
     line-height: calc(20 / 14 * 100%);
+}
+
+/* ---ADVANTAGES-------------------------- */
+.advantages {
+    padding: 80px 0;
+}
+
+@media (max-width: 992px) {
+    .advantages {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .advantages {
+        padding: 40px 0;
+    }
+}
+
+.advantages__container {}
+
+.advantages__header {
+    margin-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+    .advantages__header {
+        margin-bottom: 25px;
+    }
+}
+
+.advantages__body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px -30px;
+}
+
+.advantages__column {
+    padding: 0 15px;
+    flex: 0 1 25%;
+}
+
+@media (max-width: 1020px) {
+    .advantages__column {
+        flex: 0 1 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 560px) {
+    .advantages__column {
+        flex: 0 1 100%;
+    }
+}
+
+.advantages__item {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.advantages__item > *:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.advantages__icon {
+    height: 40px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.advantages__value {
+    font-size: 40px;
+    line-height: calc(57 / 40 * 100%);
+    letter-spacing: .2px;
+    color: #252b42;
+}
+
+.advantages__text {
+    color: #737373;
+    font-size: 16px;
+    line-height: calc(24 / 16 * 100%);
+    letter-spacing: .1px;
 }
